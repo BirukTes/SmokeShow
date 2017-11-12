@@ -1,9 +1,11 @@
 # SmokeShow
 Smoke Show - Live Music Visualization in Unity
 
-An explanation of Smoke Show's functionality is available [here](https://www.youtube.com/watch?v=w9CUsIQuFV8)
+An explanation of Smoke Show's functionality is available [here](https://www.youtube.com/watch?v=w9CUsIQuFV8).
 
 Developing Beginner level skills in Unity is encouraged before using Smoke Show!
+
+Depending on interest, I may make a tutorial video to intuitively demonstrate the following instructions.  Please send any questions to vampirecomputerpeople@gmail.com and let me know if you want a tutorial video!
 
 # How to Get Started with Smoke Show
 1. Download and install Unity - [unity3d.com](https://unity3d.com/)
