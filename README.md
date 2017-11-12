@@ -37,3 +37,10 @@ When making a new element - set **State** to INACTIVE and increment **Index Of E
 ![Hierarchy](https://github.com/Vampire-Computer-People/SmokeShowScreenShots/blob/master/animate_tiled_texture.png)
 
 After using the Lock on the Unity inspector for an element, select your array of images for an animation and drag them on to the [AnimateTiledTexture](Assets/Scripts/Visual/AnimateTiledTexture.cs) component. Make sure you first change the **Size** to 0, and set your **Frames Per Second** to your desired animation speed.
+
+# Live Audio
+If you wish to use live audio vs. an mp3 or audio file, click the Live Audio checkbox on the [AudioPeer](Assets/Scripts/Audio/AudioPeer.cs) component in the inspector.
+
+![Hierarchy](https://github.com/Vampire-Computer-People/SmokeShowScreenShots/blob/master/audio_peer.png)
+
+This will use the first available microphone on your device as your audio source. You may need to edit AudioPeer code to match your microphone's sample rate frequency.
