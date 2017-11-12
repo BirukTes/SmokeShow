@@ -26,7 +26,7 @@ All elements use the [AnimateTiledTexture](Assets/Scripts/Visual/AnimateTiledTex
 
 Create a new element by duplicating an existing element in the Unity Hierarchy. Select an element and press **Control+D**.
 
-All elements are mapped to keyboard keys via [KeyToIndexDictionary](Assets/Scripts/Dictionaries/KeyToIndexDictionary.cs). Music Reactive elements are mapped to keys 1-T from left to right on your keyboard. Backgrounds are mapped to Y-; Refer to the [Triggerable Element](Assets/Scripts/Visual/Triggerable Element.cs) component/script in the Unity inspector.
+All elements are mapped to keyboard keys via [KeyToIndexDictionary](Assets/Scripts/Dictionaries/KeyToIndexDictionary.cs). Music Reactive elements are mapped to keys 1-T from left to right on your keyboard. Backgrounds are mapped to Y-; Refer to the [Triggerable Element](Assets/Scripts/Visual/TriggerableElement.cs) component/script in the Unity inspector.
 
 ![Hierarchy](https://github.com/Vampire-Computer-People/SmokeShowScreenShots/blob/master/triggerable_element.png)
 
