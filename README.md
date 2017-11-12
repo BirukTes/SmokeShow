@@ -10,7 +10,7 @@ Depending on interest, I may make a tutorial video to intuitively demonstrate th
 # How to Get Started with Smoke Show
 1. Download and install Unity - [unity3d.com](https://unity3d.com/)
 2. Download and unzip the repository - [here](archive/master.zip)
-3. Open the project in Unity my double-clicking the main.scene file in /Assets/Scenes - ignore or skip any warnings about Unity versions.
+3. Open the project in Unity by double-clicking the main.scene file in /Assets/Scenes - ignore or skip any warnings about Unity versions.
 4. Press Play in Unity to see Smoke Show in action - by default the application uses the bundled Busy Beds - Kangaroo Court mp3 file as the source audio.
 5. When you are ready to build an executable of your customized SmokeShow - refer to [Unity's build documentation](https://docs.unity3d.com/Manual/PublishingBuilds.html).
 
