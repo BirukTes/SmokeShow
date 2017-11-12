@@ -12,6 +12,7 @@ Depending on interest, I may make a tutorial video to intuitively demonstrate th
 2. Download the and unzip the repository - [here](archive/master.zip)
 3. Open the project in Unity my double-clicking the main.scene file in /Assets/Scenes - ignore or skip any warnings about Unity versions.
 4. Press Play in Unity to see Smoke Show in action - by default the application uses the bundled Busy Beds - Kangaroo Court mp3 file as the source audio.
+5. When you are ready to build an executable of your customized SmokeShow - refer to [Unity's build documentation](https://docs.unity3d.com/Manual/PublishingBuilds.html).
 
 # How Smoke Show Works
 While playing, elements in Smoke Show can be swapped/switched by pressing keys on your keyboard. All elements are mapped to keyboard keys via [KeyToIndexDictionary](Assets/Scripts/Dictionaries/KeyToIndexDictionary.cs). 
