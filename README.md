@@ -12,6 +12,8 @@ Developing Beginner level skills in Unity is encouraged before using Smoke Show!
 4. Press Play in Unity to see Smoke Show in action - by default the application uses the bundled Busy Beds - Kangaroo Court mp3 file as the source audio.
 
 # How Smoke Show Works
+While playing, elements in Smoke Show can be swapped/switched by pressing keys on your keyboard. All elements are mapped to keyboard keys via [KeyToIndexDictionary](Assets/Scripts/Dictionaries/KeyToIndexDictionary.cs). 
+
 All elements in Smoke Show appear in the Hierarchy view in Unity. 
 
 ![Hierarchy](https://github.com/Vampire-Computer-People/SmokeShowScreenShots/blob/master/hierarchy.png)
@@ -29,3 +31,7 @@ All elements are mapped to keyboard keys via [KeyToIndexDictionary](Assets/Scrip
 ![Hierarchy](https://github.com/Vampire-Computer-People/SmokeShowScreenShots/blob/master/triggerable_element.png)
 
 When making a new element - set **State** to INACTIVE and increment **Index Of Element** by 1.
+
+![Hierarchy](https://github.com/Vampire-Computer-People/SmokeShowScreenShots/blob/master/animate_tiled_texture.png)
+
+After using the Lock on the Unity inspector for an element, select your array of images for an animation and drag them on to the [AnimateTiledTexture](Assets/Scripts/Visual/AnimateTiledTexture.cs) component. Make sure you first change the **Size** to 0, and set your **Frames Per Second** to your desired animation speed.
