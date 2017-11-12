@@ -22,9 +22,9 @@ All elements in Smoke Show appear in the Hierarchy view in Unity.
 
 They are divided into 2 categories:
 1. Backgrounds - backgrounds are a collection of images that are animated statically.
-2. Music Reactive - music reactive elements are collections of images that react to the music via the [AudioPeer](Assets/Scripts/Audio/AudioPeer.cs)
+2. Music Reactive - music reactive elements are collections of images that react to the music via the [AudioPeer](Assets/Scripts/Audio/AudioPeer.cs).
 
-As you swap between elements live, if the last selected element is Music Reactive, you can change the sensitivity of how it reacts, turn on an off its buffer, or switch if the element reacts to Bass, Mids, or Treble. Default keys for these operations are available in the Unity Input Manager https://docs.unity3d.com/Manual/class-InputManager.html and functionality is defined in [TriggerElements](Assets/Scripts/ResponsiveElements/TriggerElements.cs)
+As you swap between elements live, if the last selected element is Music Reactive, you can change the sensitivity of how it reacts, turn on an off its buffer, or switch if the element reacts to Bass, Mids, or Treble. Default keys for these operations are available in the Unity Input Manager https://docs.unity3d.com/Manual/class-InputManager.html and functionality is defined in [TriggerElements](Assets/Scripts/ResponsiveElements/TriggerElements.cs).
 
 All elements use the [AnimateTiledTexture](Assets/Scripts/Visual/AnimateTiledTexture.cs) file to animate an array of images. Video is not currently supported.
 
