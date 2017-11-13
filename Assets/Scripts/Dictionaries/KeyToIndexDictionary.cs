@@ -4,7 +4,7 @@ static class KeyToIndexDictionary {
 
     static Dictionary<string, int> _dict = new Dictionary<string, int>
     {
-        //mids
+        //music reactive
         {"1", 0},
         {"2", 1},
         {"3", 2},
@@ -20,7 +20,7 @@ static class KeyToIndexDictionary {
         {"e", 12},
         {"r", 13},
         {"t", 14},
-        //planes
+        //backgrounds
         {"y", 15},
         {"u", 16},
         {"i", 17},

@@ -6,16 +6,16 @@ using System;
 
 public class TriggerElements : MonoBehaviour {
 
-    private List<TriggerableElement> mids = new List<TriggerableElement>();
-    private List<TriggerableElement> planes = new List<TriggerableElement>();
+    private List<TriggerableElement> musicReactiveElements = new List<TriggerableElement>();
+    private List<TriggerableElement> backgroundElements = new List<TriggerableElement>();
     private TriggerableElement lastTriggeredElement;
 
     protected virtual void Awake() {
-        foreach ( GameObject obj in GameObject.FindGameObjectsWithTag( "Mid" ) ) {
-            mids.Add( obj.GetComponent<TriggerableElement>() );
+        foreach ( GameObject obj in GameObject.FindGameObjectsWithTag( "MusicReactive" ) ) {
+            musicReactiveElements.Add( obj.GetComponent<TriggerableElement>() );
         }
-        foreach ( GameObject obj in GameObject.FindGameObjectsWithTag( "Plane" ) ) {
-            planes.Add( obj.GetComponent<TriggerableElement>() );
+        foreach ( GameObject obj in GameObject.FindGameObjectsWithTag( "Background" ) ) {
+            backgroundElements.Add( obj.GetComponent<TriggerableElement>() );
         }
     }
 
@@ -25,10 +25,10 @@ public class TriggerElements : MonoBehaviour {
 
             try {
                 if ( index <= 14 ) {
-                    lastTriggeredElement = TriggerElement( index, mids );
+                    lastTriggeredElement = TriggerElement( index, musicReactiveElements );
                 }
                 else if ( index <= 29 ) {
-                    lastTriggeredElement = TriggerElement( index, planes );
+                    lastTriggeredElement = TriggerElement( index, backgroundElements );
                 }
                 else if ( index == 9999 ) {
                     Debug.Log( "Could not find a value for keystroke of " + c.ToString() );
