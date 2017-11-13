@@ -44,6 +44,6 @@ After using the Lock on the Unity inspector for an element, select your array of
 # Live Audio
 If you wish to use live audio vs. an mp3 or audio file, click the Live Audio checkbox on the [AudioPeer](Assets/Scripts/Audio/AudioPeer.cs) component in the inspector.
 
-![Hierarchy](https://github.com/Vampire-Computer-People/SmokeShowScreenShots/blob/master/audio_peer.png)
+![Hierarchy](https://github.com/Vampire-Computer-People/SmokeShowScreenShots/blob/master/audio_peer_ui.png)
 
-This will use the first available microphone on your device as your audio source. You may need to edit AudioPeer code to match your microphone's sample rate frequency.
+This will use the first available microphone on your device as your audio source. You may need to edit **Frequency** to match your microphone's sample rate frequency.
