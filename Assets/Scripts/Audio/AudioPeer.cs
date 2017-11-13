@@ -12,6 +12,8 @@ public class AudioPeer : MonoBehaviour {
 
     [SerializeField]
     bool liveAudio = false;
+    [SerializeField]
+    int frequency;
     public static float[] samples = new float[512];
     public static float[] frequencyBand = new float[8];
     public static float[] bandBuffer = new float[8];
@@ -26,7 +28,7 @@ public class AudioPeer : MonoBehaviour {
     void Start() {
         audioSource = GetComponent<AudioSource>();
         if ( liveAudio ) {
-            audioSource.clip = Microphone.Start( Microphone.devices[0], true, 1, 44100 );
+            audioSource.clip = Microphone.Start( Microphone.devices[0], true, 1, frequency );
             while ( !( Microphone.GetPosition( Microphone.devices[0] ) > 0 ) ) { } // wait until the recording has started
         }
         audioSource.Play(); // Play the audio source!
