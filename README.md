@@ -1,20 +1,21 @@
 # SmokeShow
 Smoke Show - Live Music Visualization in Unity
 
-An explanation of Smoke Show's functionality is available [here](https://www.youtube.com/watch?v=w9CUsIQuFV8).
+An explanation of Smoke Show's functionality is available [here](https://www.youtube.com/watch?v=w9CUsIQuFV8) and a tutorial is available [here](https://www.youtube.com/watch?v=cvrJT8UmlDM).
 
 Developing Beginner level skills in Unity is encouraged before using Smoke Show!
-
-Depending on interest, I may make a tutorial video to intuitively demonstrate the following instructions.  Please send any questions to vampirecomputerpeople@gmail.com and let me know if you want a tutorial video!
 
 # How to Get Started with Smoke Show
 1. Download and install Unity - [unity3d.com](https://unity3d.com/)
 2. Download and unzip the repository - [here](archive/master.zip)
 3. Open the project in Unity by double-clicking the main.scene file in /Assets/Scenes - ignore or skip any warnings about Unity versions.
-4. Press Play in Unity to see Smoke Show in action - by default the application uses the bundled Busy Beds - Kangaroo Court mp3 file as the source audio.
-5. When you are ready to build an executable of your customized SmokeShow - refer to [Unity's build documentation](https://docs.unity3d.com/Manual/PublishingBuilds.html).
+4. Watch this [tutorial](https://www.youtube.com/watch?v=cvrJT8UmlDM).
+5. Press Play in Unity to see Smoke Show in action - by default the application uses the bundled Busy Beds - Kangaroo Court mp3 file as the source audio.
+6. When you are ready to build an executable of your customized SmokeShow - refer to [Unity's build documentation](https://docs.unity3d.com/Manual/PublishingBuilds.html).
 
 # How Smoke Show Works
+Check out this [tutorial](https://www.youtube.com/watch?v=cvrJT8UmlDM).
+
 While playing, elements in Smoke Show can be swapped/switched by pressing keys on your keyboard. All elements are mapped to keyboard keys via [KeyToIndexDictionary](Assets/Scripts/Dictionaries/KeyToIndexDictionary.cs). 
 
 All elements in Smoke Show appear in the Hierarchy view in Unity. 
