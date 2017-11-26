@@ -83,7 +83,9 @@ class TransparentMaterial : MonoBehaviour {
 
     void Update() {
         if ( element.state == States.ACTIVE ) {
-            m_Material.color = new Color( unityColor.r, unityColor.g, unityColor.b, Calc() );
+            var alpha = Calc();
+            MessageBus.calcedAlpha = alpha;
+            m_Material.color = new Color( unityColor.r, unityColor.g, unityColor.b, alpha );
         }
     }
 
