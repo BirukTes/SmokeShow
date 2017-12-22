@@ -9,7 +9,7 @@ public class Reduce : MonoBehaviour {
     [SerializeField]
     private Color unityColor = new Color( 0, 0, 0, 0 );
     [SerializeField]
-    private float reduceAmp = 100;
+    private float reduceAmp = 1;
 
     // Use this for initialization
     void Start () {
@@ -27,6 +27,24 @@ public class Reduce : MonoBehaviour {
                 alpha = .1f;
             }
             m_Material.color = new Color( unityColor.r, unityColor.g, unityColor.b, alpha );
+        }
+    }
+
+    public void IncrementSensitivityDivision() {
+        if ( reduceAmp == -.1f ) {
+            reduceAmp += .2f;
+        }
+        else {
+            reduceAmp += .1f;
+        }
+    }
+
+    public void DecrementSensitivityDivision() {
+        if ( reduceAmp == .1f ) {
+            reduceAmp -= .2f;
+        }
+        else {
+            reduceAmp -= .1f;
         }
     }
 

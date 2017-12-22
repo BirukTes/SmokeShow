@@ -47,10 +47,16 @@ public class TriggerElements : MonoBehaviour {
             if ( lastTriggeredElement && !lastTriggeredElement.audioInsensitive ) {
                 lastTriggeredElement.gameObject.GetComponent<TransparentMaterial>().DecrementSensitivityDivision();
             }
+            else if ( lastTriggeredElement && lastTriggeredElement.audioInsensitive ) {
+                lastTriggeredElement.gameObject.GetComponent<Reduce>().DecrementSensitivityDivision();
+            }
         }
         else if ( Input.GetButtonDown( "Down" ) ) {
             if ( lastTriggeredElement && !lastTriggeredElement.audioInsensitive ) {
                 lastTriggeredElement.gameObject.GetComponent<TransparentMaterial>().IncrementSensitivityDivision();
+            }
+            else if ( lastTriggeredElement && lastTriggeredElement.audioInsensitive ) {
+                lastTriggeredElement.gameObject.GetComponent<Reduce>().IncrementSensitivityDivision();
             }
         }
         else if ( Input.GetButtonDown( "FlipBuffer" ) ) {
