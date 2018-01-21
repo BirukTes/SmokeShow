@@ -21,6 +21,8 @@ class TransparentMaterial : MonoBehaviour {
     [SerializeField]
     int bandZ = 5;
     private TriggerableElement element;
+	[SerializeField]
+	private float baseAlpha = .5f;
 
     public void IncrementSensitivityDivision() {
         if (divisionIntensityBuffer == -1) {
@@ -85,7 +87,7 @@ class TransparentMaterial : MonoBehaviour {
         if ( element.state == States.ACTIVE ) {
             var alpha = Calc();
             MessageBus.calcedAlpha = alpha;
-            m_Material.color = new Color( unityColor.r, unityColor.g, unityColor.b, alpha );
+            m_Material.color = new Color( unityColor.r, unityColor.g, unityColor.b, baseAlpha + alpha );
         }
     }
 
