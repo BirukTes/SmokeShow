@@ -9,6 +9,7 @@ public class TriggerElements : MonoBehaviour {
     private List<TriggerableElement> musicReactiveElements = new List<TriggerableElement>();
     private List<TriggerableElement> backgroundElements = new List<TriggerableElement>();
     private TriggerableElement lastTriggeredElement;
+    private Camera camera;
 
     protected virtual void Awake() {
         foreach ( GameObject obj in GameObject.FindGameObjectsWithTag( "MusicReactive" ) ) {
@@ -17,6 +18,8 @@ public class TriggerElements : MonoBehaviour {
         foreach ( GameObject obj in GameObject.FindGameObjectsWithTag( "Background" ) ) {
             backgroundElements.Add( obj.GetComponent<TriggerableElement>() );
         }
+        camera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        camera.clearFlags = CameraClearFlags.SolidColor;
     }
 
     void Update() {
@@ -81,6 +84,18 @@ public class TriggerElements : MonoBehaviour {
         }
         else if ( Input.GetKey( KeyCode.LeftShift ) && Input.GetKey( KeyCode.Escape ) ) {
             SceneManager.LoadScene( SceneManager.GetActiveScene().name );
+        }
+        else if (Input.GetButtonDown("Black"))
+        {
+            camera.backgroundColor = Color.black;
+        }
+        else if (Input.GetButtonDown("Grey"))
+        {
+            camera.backgroundColor = Color.grey;
+        }
+        else if (Input.GetButtonDown("White"))
+        {
+            camera.backgroundColor = Color.white;
         }
     }
 
